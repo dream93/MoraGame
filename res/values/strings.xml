@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">猜拳游戏（单机版）</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tone">石头</string>
+    <string name="shear">剪刀</string>
+    <string name="cloth">布</string>
+    <string name="notice">出拳</string>
+    <string name="result">结果</string>
+    <string name="game_start">猜拳</string>
+    <string name="clear">清空战局</string>
+    <string name="title">猜拳游戏单机版进行中</string>
+    <string name="result_title">目前战况：</string>
+    <string name="player1">玩家</string>
+    <string name="player2">电脑</string>
+    <string name="help_title">帮助文档</string>
+    <string name="menu_back">返回</string>
+    <string name="menu_help">帮助</string>
+
+</resources>

@@ -1,0 +1,197 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="20dp"
+    android:weightSum="10">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_name"
+        android:text="@string/title"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:textColor="#f00"
+        android:textSize="25sp"
+        android:layout_weight="1" />
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="4">
+        <TextView
+            android:id="@+id/play1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player1"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="#f00"
+            android:layout_weight="1"/>        
+        
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#f00"
+            android:layout_weight="2"/>
+        
+       <TextView
+            android:id="@+id/play2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player2"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#f00"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:weightSum="3">
+        <RadioGroup
+            android:id="@+id/play1_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/notice" 
+            android:layout_weight="1">
+            <RadioButton 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="@string/tone"
+				android:textSize="20sp"
+				android:padding="10dp" 
+				android:id="@+id/play1_tone" 
+				android:checked="true" />
+ 
+    		   		
+    		<RadioButton 
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content"
+    		    android:padding="10dp" 
+    		    android:textSize="20sp"
+    		    android:text="@string/shear"
+    		    android:id="@+id/play1_shear" />
+    	    		    
+    		<RadioButton 
+    		    android:id="@+id/play1_cloth"    
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content" 
+    		    android:padding="10dp" 
+    		    android:textSize="20sp"
+    		    android:text="@string/cloth" />
+    	</RadioGroup>
+    	
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:orientation="vertical"
+            android:weightSum="4">
+            
+        	<ImageView
+        	    android:id="@+id/show"
+           		android:src="@drawable/d_hehe"           
+           		android:layout_width="match_parent"
+            	android:layout_height="0dp"
+            	android:gravity="center"
+            	android:scaleType="centerInside"
+            	android:layout_weight="4"/>
+        	<TextView
+        	    android:id="@+id/display"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="0dp"
+        	    android:gravity="center_horizontal"
+        	    android:textSize="20sp"
+        	    android:textColor="#00f" 
+        	    android:layout_weight="1"/>
+        </LinearLayout>
+        
+    	<RadioGroup
+            android:id="@+id/play2_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/notice"
+            
+            android:layout_weight="1" >
+            <RadioButton 
+				android:id="@+id/play2_tone" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:padding="10dp" 
+				android:textSize="20sp"
+				android:text="@string/tone"  />
+    	    		   		
+    		<RadioButton 
+    		    android:id="@+id/play2_shear"
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content" 
+    		    android:padding="10dp" 
+    		    android:textSize="20sp"
+    		    android:text="@string/shear" />
+    		
+    		<RadioButton 
+    		    android:id="@+id/play2_cloth"  		
+    		    android:layout_width="wrap_content" 
+    		    android:layout_height="wrap_content" 
+    		    android:padding="10dp" 
+    		    android:textSize="20sp"
+    		    android:text="@string/cloth" />
+    	</RadioGroup>       		
+	</LinearLayout>
+	<Button 
+	    android:id="@+id/game_start"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/game_start"/>
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    
+		<TextView 
+	   		android:id="@+id/tv_notice"
+	   		android:layout_weight="1"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center"
+	    	android:text="@string/result_title"
+	    	android:textColor="#00f"
+	    	android:textSize="20sp"
+	    	android:paddingTop="20dp"
+	   	 	android:paddingBottom="10dp"/>
+		
+		<TextView
+	   		android:id="@+id/tv_note"
+	   		android:layout_weight="2"
+	    	android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#00f"
+	    	android:textSize="20sp"
+	    	android:paddingTop="20dp"
+	   	 	android:paddingBottom="10dp"/>
+	</LinearLayout>
+	<Button 
+	    android:id="@+id/game_clear"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/clear"/>
+</LinearLayout>
